@@ -38,13 +38,13 @@
       <h1 class="hero-title">
         STATEMENT<br><span class="accent">AI-FIRST</span>
       </h1>
-      <p class="hero-subtitle">Investigación sobre validación inteligente de paquetes arqueológicos</p>
+      <p class="hero-subtitle">Investigación: validación de paquetes arqueológicos y el rol potencial de la IA</p>
       <p class="hero-desc">
-        Cómo la IA puede transformar la revisión de inventarios arqueológicos:
-        del matching manual de fichas, fotos y actas a un proceso asistido con
-        detección semántica de inconsistencias.
+        Exploración de un problema recurrente en la gestión de inventarios arqueológicos:
+        la revisión manual de fichas, fotos y actas. Este statement investiga dónde
+        podría intervenir la IA y bajo qué condiciones.
       </p>
-      <a href="#problema" class="btn">Conocer más</a>
+      <a href="#problema" class="btn">Explorar investigación</a>
     </div>
   </section>
 
@@ -56,7 +56,11 @@
         <span class="section-tag mono">PROBLEMA</span>
       </div>
       <div class="section-content">
-        <h2>Descripción del problema real</h2>
+        <div class="hypothesis-note">
+          <span class="hypothesis-icon">&#9432;</span>
+          <p>Hipótesis basada en investigación preliminar. Este problema se identificó a partir de entrevistas y observación inicial, y requiere validación adicional.</p>
+        </div>
+        <h2>Descripción del problema</h2>
         <div class="card-grid">
           <div class="card">
             <h3>¿Quién sufre?</h3>
@@ -87,6 +91,10 @@
         <span class="section-tag mono">CONTEXTO</span>
       </div>
       <div class="section-content">
+        <div class="hypothesis-note">
+          <span class="hypothesis-icon">&#9432;</span>
+          <p>Contexto declarado como supuesto. Estas condiciones se basan en observación preliminar y no han sido verificadas de manera exhaustiva.</p>
+        </div>
         <h2>Contexto en el que ocurre</h2>
         <div class="info-list">
           <div class="info-item">
@@ -174,61 +182,39 @@
         <span class="section-tag mono">AI-FIRST</span>
       </div>
       <div class="section-content">
-        <h2>Cómo interviene la IA</h2>
+        <h2>Dónde podría intervenir la IA</h2>
+        <div class="hypothesis-note">
+          <span class="hypothesis-icon">&#9432;</span>
+          <p>Esta sección describe hipótesis sobre el rol potencial de la IA, no una solución definida. Cada punto requiere validación con usuarios reales.</p>
+        </div>
         <div class="ai-grid">
           <div class="ai-card">
             <div class="ai-card-header">
               <span class="ai-icon">🔗</span>
-              <h3>Matching flexible</h3>
+              <h3>Interpretación humana variable</h3>
             </div>
-            <p>Asocia filas del Excel con fotos aunque los nombres no coincidan. Usa descripción, metadatos y señales visuales básicas.</p>
-            <div class="confidence">
-              <div class="confidence-bar" style="--width: 92%"></div>
-              <span class="confidence-label">Confianza: 92%</span>
-            </div>
+            <p>El matching entre filas del Excel y fotos depende de criterios individuales: cada persona nombra archivos y describe piezas de manera distinta. La IA podría asistir en la asociación, pero la variabilidad de criterios hace que este paso requiera supervisión humana constante.</p>
           </div>
           <div class="ai-card">
             <div class="ai-card-header">
               <span class="ai-icon">🔍</span>
-              <h3>Detección semántica</h3>
+              <h3>Ambigüedad y excepciones</h3>
             </div>
-            <p>Identifica inconsistencias como "cerámica" descrita pero atributos de otra categoría, medidas imposibles o unidades incompatibles.</p>
-            <div class="confidence">
-              <div class="confidence-bar" style="--width: 87%"></div>
-              <span class="confidence-label">Confianza: 87%</span>
-            </div>
+            <p>Existen inconsistencias que parecen errores pero son excepciones válidas (e.g., una pieza catalogada en categoría atípica por contexto histórico). La IA podría señalar anomalías, pero distinguir un error real de una excepción legítima es un problema abierto que se exploraría en la investigación.</p>
           </div>
           <div class="ai-card">
             <div class="ai-card-header">
               <span class="ai-icon">📋</span>
-              <h3>Reporte automático</h3>
+              <h3>Producción hipotética de la IA</h3>
             </div>
-            <p>Genera reportes de subsanación con severidad, explicación y sugerencias. El humano solo toma la decisión final.</p>
-            <div class="confidence">
-              <div class="confidence-bar" style="--width: 95%"></div>
-              <span class="confidence-label">Confianza: 95%</span>
-            </div>
+            <p>Se hipotetiza que la IA produciría: sugerencias de asociación con nivel de confianza, explicaciones de por qué señala una inconsistencia, y preguntas al usuario cuando la ambigüedad es alta. El formato y utilidad de estos outputs requiere validación.</p>
           </div>
-        </div>
-        <div class="control-risk">
-          <h4>Control de riesgo</h4>
-          <div class="risk-items">
-            <div class="risk-item">
-              <span class="risk-check">✓</span>
-              <span>Human-in-the-loop: la IA no aprueba sola</span>
+          <div class="ai-card">
+            <div class="ai-card-header">
+              <span class="ai-icon">⚖️</span>
+              <h3>Control de riesgo</h3>
             </div>
-            <div class="risk-item">
-              <span class="risk-check">✓</span>
-              <span>Umbrales de confianza configurables</span>
-            </div>
-            <div class="risk-item">
-              <span class="risk-check">✓</span>
-              <span>Logs completos para auditoría</span>
-            </div>
-            <div class="risk-item">
-              <span class="risk-check">✓</span>
-              <span>Explicaciones transparentes en cada sugerencia</span>
-            </div>
+            <p>Se exploraría un modelo donde la IA nunca apruebe de forma autónoma. Las decisiones finales permanecerían en el humano. Queda por investigar qué umbrales de confianza serían aceptables y cómo presentar la incertidumbre sin generar fatiga de alertas.</p>
           </div>
         </div>
       </div>
@@ -240,7 +226,7 @@
     <div class="footer-inner">
       <div class="footer-brand">
         <span class="logo">STATEMENT <span class="logo-accent">AI-first</span></span>
-        <p>Validador inteligente de paquetes arqueológicos con IA.</p>
+        <p>Investigación sobre el rol potencial de la IA en la validación de paquetes arqueológicos.</p>
       </div>
       <div class="footer-links">
         <h4>Navegación</h4>
