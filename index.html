@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Statement AI-first — Validador de Paquetes Arqueológicos</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="header-inner">
+      <a href="#" class="logo">STATEMENT <span class="logo-accent">AI-first</span></a>
+      <nav class="nav">
+        <a href="#problema">Problema</a>
+        <a href="#contexto">Contexto</a>
+        <a href="#flujo">Flujo</a>
+        <a href="#ai">AI-first</a>
+        <a href="#demo">Demo</a>
+      </nav>
+      <a href="#demo" class="btn btn-sm">Probar ahora</a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" id="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="hero-tags">
+        <span class="tag">Arqueología</span>
+        <span class="tag-dot">·</span>
+        <span class="tag">Validación</span>
+        <span class="tag-dot">·</span>
+        <span class="tag">IA</span>
+      </div>
+      <h1 class="hero-title">
+        STATEMENT<br><span class="accent">AI-FIRST</span>
+      </h1>
+      <p class="hero-subtitle">Validador inteligente de paquetes arqueológicos</p>
+      <p class="hero-desc">
+        Sube tu paquete (Excel + fotos + acta) y en 30 segundos obtén un reporte
+        de consistencia y una lista de correcciones con evidencias.
+      </p>
+      <div class="hero-actions">
+        <a href="#demo" class="btn">Ver Demo</a>
+        <a href="#problema" class="btn btn-outline">Conocer más</a>
+      </div>
+      <div class="scroll-indicator">
+        <span class="scroll-text">SCROLL</span>
+        <div class="scroll-line"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Problema -->
+  <section class="section" id="problema">
+    <div class="section-grid">
+      <div class="section-label">
+        <span class="section-number">01</span>
+        <span class="section-tag mono">PROBLEMA</span>
+      </div>
+      <div class="section-content">
+        <h2>Descripción del problema real</h2>
+        <div class="card-grid">
+          <div class="card">
+            <h3>¿Quién sufre?</h3>
+            <p>Auxiliares de colección, arqueólogos, curadores y contratistas que gestionan inventarios de bienes arqueológicos en laboratorios, museos e instituciones.</p>
+          </div>
+          <div class="card">
+            <h3>¿Qué tarea intentan?</h3>
+            <p>Recibir y revisar paquetes con una hoja Excel (ficha), un <code>.zip</code> con fotos y PDFs (acta/informe) para validar el registro de piezas arqueológicas.</p>
+          </div>
+          <div class="card">
+            <h3>¿Qué sale mal?</h3>
+            <p>Los paquetes llegan con nombres inconsistentes, fotos que no corresponden, campos obligatorios vacíos e IDs duplicados. La revisión manual consume horas.</p>
+          </div>
+          <div class="card">
+            <h3>¿Qué cuesta el fallo?</h3>
+            <p>Tiempo perdido en reprocesos, pérdida de trazabilidad, riesgos legales en auditorías y retrasos en trámites oficiales de registro.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contexto -->
+  <section class="section section-alt" id="contexto">
+    <div class="section-grid">
+      <div class="section-label">
+        <span class="section-number">02</span>
+        <span class="section-tag mono">CONTEXTO</span>
+      </div>
+      <div class="section-content">
+        <h2>Contexto en el que ocurre</h2>
+        <div class="info-list">
+          <div class="info-item">
+            <div class="info-icon">🏛️</div>
+            <div>
+              <h4>Entorno</h4>
+              <p>Laboratorios, museos e instituciones que gestionan colecciones arqueológicas y trámites de registro oficial.</p>
+            </div>
+          </div>
+          <div class="info-item">
+            <div class="info-icon">📊</div>
+            <div>
+              <h4>Frecuencia y volumen</h4>
+              <p>Decenas o cientos de registros por lote. Archivos de múltiples personas y contratistas con criterios distintos de nombrado.</p>
+            </div>
+          </div>
+          <div class="info-item">
+            <div class="info-icon">📁</div>
+            <div>
+              <h4>Formatos</h4>
+              <div class="badge-row">
+                <span class="badge">Excel</span>
+                <span class="badge">ZIP (fotos)</span>
+                <span class="badge">PDF (actas)</span>
+                <span class="badge">Correos</span>
+              </div>
+            </div>
+          </div>
+          <div class="info-item">
+            <div class="info-icon">⚠️</div>
+            <div>
+              <h4>Restricciones</h4>
+              <p>Trazabilidad obligatoria para auditorías. Resultados terminan en registros oficiales. Personal limitado y criterios variables.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Flujo -->
+  <section class="section" id="flujo">
+    <div class="section-grid">
+      <div class="section-label">
+        <span class="section-number">03</span>
+        <span class="section-tag mono">FLUJO</span>
+      </div>
+      <div class="section-content">
+        <h2>Flujo actual del problema</h2>
+        <div class="flow">
+          <div class="flow-step">
+            <div class="flow-header">
+              <span class="flow-badge">INPUT</span>
+            </div>
+            <p>Excel + ZIP de imágenes + PDFs de acta/informe + correos de envío. Archivos mal nombrados, calidad variable.</p>
+          </div>
+          <div class="flow-arrow">→</div>
+          <div class="flow-step">
+            <div class="flow-header">
+              <span class="flow-badge flow-badge-decision">DECISIÓN</span>
+            </div>
+            <p>Validar que cada fila tenga evidencia fotográfica. Detectar inconsistencias en medidas, fechas, duplicados. Aprobar o pedir subsanación.</p>
+          </div>
+          <div class="flow-arrow">→</div>
+          <div class="flow-step">
+            <div class="flow-header">
+              <span class="flow-badge flow-badge-output">OUTPUT</span>
+            </div>
+            <p>Aprobación o rechazo parcial + lista de correcciones + rearmado manual del lote cuando es necesario.</p>
+          </div>
+        </div>
+        <div class="bottleneck">
+          <h4>🔴 Cuellos de botella</h4>
+          <p>Matching manual foto↔fila, detección de inconsistencias semánticas, generación de reportes de subsanación. Todo depende de un humano revisando línea por línea.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AI-first -->
+  <section class="section section-alt" id="ai">
+    <div class="section-grid">
+      <div class="section-label">
+        <span class="section-number">04</span>
+        <span class="section-tag mono">AI-FIRST</span>
+      </div>
+      <div class="section-content">
+        <h2>Cómo interviene la IA</h2>
+        <div class="ai-grid">
+          <div class="ai-card">
+            <div class="ai-card-header">
+              <span class="ai-icon">🔗</span>
+              <h3>Matching flexible</h3>
+            </div>
+            <p>Asocia filas del Excel con fotos aunque los nombres no coincidan. Usa descripción, metadatos y señales visuales básicas.</p>
+            <div class="confidence">
+              <div class="confidence-bar" style="--width: 92%"></div>
+              <span class="confidence-label">Confianza: 92%</span>
+            </div>
+          </div>
+          <div class="ai-card">
+            <div class="ai-card-header">
+              <span class="ai-icon">🔍</span>
+              <h3>Detección semántica</h3>
+            </div>
+            <p>Identifica inconsistencias como "cerámica" descrita pero atributos de otra categoría, medidas imposibles o unidades incompatibles.</p>
+            <div class="confidence">
+              <div class="confidence-bar" style="--width: 87%"></div>
+              <span class="confidence-label">Confianza: 87%</span>
+            </div>
+          </div>
+          <div class="ai-card">
+            <div class="ai-card-header">
+              <span class="ai-icon">📋</span>
+              <h3>Reporte automático</h3>
+            </div>
+            <p>Genera reportes de subsanación con severidad, explicación y sugerencias. El humano solo toma la decisión final.</p>
+            <div class="confidence">
+              <div class="confidence-bar" style="--width: 95%"></div>
+              <span class="confidence-label">Confianza: 95%</span>
+            </div>
+          </div>
+        </div>
+        <div class="control-risk">
+          <h4>Control de riesgo</h4>
+          <div class="risk-items">
+            <div class="risk-item">
+              <span class="risk-check">✓</span>
+              <span>Human-in-the-loop: la IA no aprueba sola</span>
+            </div>
+            <div class="risk-item">
+              <span class="risk-check">✓</span>
+              <span>Umbrales de confianza configurables</span>
+            </div>
+            <div class="risk-item">
+              <span class="risk-check">✓</span>
+              <span>Logs completos para auditoría</span>
+            </div>
+            <div class="risk-item">
+              <span class="risk-check">✓</span>
+              <span>Explicaciones transparentes en cada sugerencia</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Demo -->
+  <section class="section" id="demo">
+    <div class="section-grid">
+      <div class="section-label">
+        <span class="section-number">05</span>
+        <span class="section-tag mono">DEMO</span>
+      </div>
+      <div class="section-content">
+        <h2>Prueba el validador</h2>
+        <p class="demo-desc">Sube un paquete arqueológico y obtén un reporte de consistencia automático.</p>
+        <div class="demo-area" id="dropzone">
+          <div class="demo-upload">
+            <div class="upload-icon">↑</div>
+            <p class="upload-title">Arrastra tus archivos aquí</p>
+            <p class="upload-sub">Excel (.xlsx) + ZIP (fotos) + PDF (acta)</p>
+            <label class="btn btn-sm upload-btn">
+              Seleccionar archivos
+              <input type="file" multiple accept=".xlsx,.xls,.zip,.pdf" id="fileInput" hidden>
+            </label>
+          </div>
+          <div class="file-list" id="fileList"></div>
+        </div>
+        <button class="btn btn-full" id="validateBtn" disabled>Validar paquete</button>
+        <div class="report" id="report" hidden>
+          <div class="report-header">
+            <h3>Reporte de validación</h3>
+            <span class="report-badge" id="reportStatus"></span>
+          </div>
+          <div class="report-body" id="reportBody"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="logo">STATEMENT <span class="logo-accent">AI-first</span></span>
+        <p>Validador inteligente de paquetes arqueológicos con IA.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Navegación</h4>
+        <a href="#problema">Problema</a>
+        <a href="#contexto">Contexto</a>
+        <a href="#flujo">Flujo</a>
+        <a href="#ai">AI-first</a>
+        <a href="#demo">Demo</a>
+      </div>
+      <div class="footer-tech">
+        <h4>Stack</h4>
+        <p>Vanilla JS · HTML · CSS</p>
+        <p>Diseño inspirado en portfolio-emmy</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Statement AI-first. Emmy Arias Pardo.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
